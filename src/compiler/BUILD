@@ -102,6 +102,12 @@ grpc_proto_plugin(
 )
 
 grpc_proto_plugin(
+    name = "proto_objc_descriptor_plugin",
+    srcs = ["proto_objc_descriptor_plugin.cc"],
+    deps = [":grpc_plugin_support"],
+)
+
+grpc_proto_plugin(
     name = "grpc_php_plugin",
     srcs = ["php_plugin.cc"],
     deps = [":grpc_plugin_support"],
